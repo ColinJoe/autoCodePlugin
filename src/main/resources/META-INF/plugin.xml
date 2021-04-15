@@ -16,4 +16,11 @@
         <listener class="com.github.colinjoe.autocodeplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.colinjoe.autocodeplugin.actions.MyAction"
+                class="com.github.colinjoe.autocodeplugin.actions.MyAction" text="Auto Code"
+                description="Mature lines of code should be able to write itself">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
