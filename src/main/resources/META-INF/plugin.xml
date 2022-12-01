@@ -1,7 +1,8 @@
 <idea-plugin>
     <id>com.github.colinjoe.autocodeplugin</id>
-    <name>autoCodePlugin</name>
-    <vendor>colinjoe</vendor>
+    <name>AutoCodePlugin</name>
+    <version>0.0.1</version>
+    <vendor url="http://w3.thecolinjoe.com" email="thecolinjoe@protonmail.com" />
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
@@ -17,9 +18,8 @@
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
     <actions>
-        <action id="com.github.colinjoe.autocodeplugin.actions.MyAction"
-                class="com.github.colinjoe.autocodeplugin.actions.MyAction" text="Auto Code"
-                description="Mature lines of code should be able to write itself">
+        <action id="autoCodePlugin.MyAction" class="com.github.colinjoe.autocodeplugin.actions.MyAction" text="MyAction"
+                description="MyActionDesc">
             <add-to-group group-id="MainMenu" anchor="last"/>
         </action>
     </actions>
